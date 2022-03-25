@@ -1,9 +1,11 @@
 package com.bit.day08;
 
+import java.util.Calendar;
+
 public class Ex04 {
 
 	public static void main(String[] args) {
-		java.util.Calendar cal = java.util.Calendar.getInstance();
+		Calendar cal = Calendar.getInstance();
 		System.out.println(cal.get(java.util.Calendar.YEAR));
 		System.out.println(cal.get(java.util.Calendar.MONTH)+1 + "월");	// 0 ~ 11
 		System.out.println(cal.get(java.util.Calendar.DATE) + "일");
