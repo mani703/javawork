@@ -63,6 +63,7 @@ public class Ex17 {
 				}
 				
 				student[indexOfUpdate] += temp;				// 수정 된 값으로 변경
+
 			} else if(input.equals("4")) {
 				System.out.print("삭제할 학번 선택>");
 				String numberOfDelete = sc.next();			// 삭제할 학번의 수
@@ -86,3 +87,4 @@ public class Ex17 {
 		System.out.println("이용해주셔서 감사합니다.");
 	}
 }
+
