@@ -18,19 +18,19 @@ public class Ex01 {
 		// Set 타입의 자료구조 (순서가 없는 자료구조)
 		// 이론적 : 순서(x), 중복(x) -> 실질적 : 순서(o), 중복(x)
 		// 중복을 허용하지 않는 자료구조
-//		java.util.Set set1 = new java.util.HashSet();
-//		System.out.println("1." + set1.add(1111));
-//		System.out.println("2." + set1.add(2222));
-//		System.out.println("3." + set1.add(3333));
-//		System.out.println("4." + set1.add(2222));
-//		System.out.println("5." + set1.add(1111));
+		java.util.Set set1 = new java.util.HashSet();
+		System.out.println("1." + set1.add(1111));
+		System.out.println("2." + set1.add(2222));
+		System.out.println("3." + set1.add(3333));
+		System.out.println("4." + set1.add(2222));
+		System.out.println("5." + set1.add(1111));
 		
-		java.util.Set set1 = new java.util.TreeSet();
-		System.out.println("1." + set1.add("첫번째"));
-		System.out.println("2." + set1.add("두번째"));
-		System.out.println("3." + set1.add("세번째"));
-		System.out.println("4." + set1.add("두번째"));
-		System.out.println("5." + set1.add("첫번째"));
+//		java.util.Set set1 = new java.util.TreeSet();
+//		System.out.println("1." + set1.add("첫번째"));
+//		System.out.println("2." + set1.add("두번째"));
+//		System.out.println("3." + set1.add("세번째"));
+//		System.out.println("4." + set1.add("두번째"));
+//		System.out.println("5." + set1.add("첫번째"));
 		java.util.Iterator ite = set1.iterator();
 		while(ite.hasNext()) {
 			System.out.println(ite.next());
