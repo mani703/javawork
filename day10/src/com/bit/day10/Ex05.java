@@ -2,6 +2,7 @@ package com.bit.day10;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 
 public class Ex05 {
 	
@@ -21,5 +22,10 @@ public class Ex05 {
 			
 		});
 		System.out.println(list);
+		
+		Iterator ite = list.iterator();
+		while(ite.hasNext()) {
+			System.out.println(ite.next());
+		}
 	}
 }
