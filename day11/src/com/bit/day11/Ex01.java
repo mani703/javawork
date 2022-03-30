@@ -8,9 +8,9 @@ public class Ex01 {
 
 	public static void main(String[] args) {
 		
-		String path = "C:\\javawork\\day11";
+		String path = "C:\\javawork\\day11\\test08.txt";
 //		path = args[0];
-		path = "./";
+//		path = "test08.txt";
 		File root = new File(path);
 		
 		if(root.exists() && root.isDirectory()) {
