@@ -1,15 +1,13 @@
-package com.bit.day11;
-
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Ex01 {
+public class Dir {
 
 	public static void main(String[] args) {
 		
 		String path = "../day07/src/com/bit/day07";
-//		path = args[0];
+		path = args[0];
 //		path = "test08.txt";
 		File root = new File(path);
 		
