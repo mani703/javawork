@@ -18,8 +18,8 @@ public class Ex12 {
 			dis = new DataInputStream(fis);
 			
 			System.out.println(dis.read());
-			System.out.println(dis.readInt());
 			System.out.println(dis.readDouble());
+			System.out.println(dis.readInt());
 			System.out.println(dis.readBoolean());
 			System.out.println(dis.readChar());
 			System.out.println(dis.readUTF());
