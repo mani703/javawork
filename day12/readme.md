@@ -23,3 +23,7 @@
 * 문자열을 한번에 받아서 저장
 
 오브젝트 스트림(ObjectOutputStream, ObjectInputStream)
+* ArrayList, Vector 가능
+* 객체 직렬화 -> 객체와 관련된 바이너리 값을 나란히 표현하는 것
+* 하지만, 객체 데이터에 메서드는 직렬화 대상에 포함하지 않는다
+* transient: 직렬화 대상에서 제외 -> 디폴트 값으로 출력

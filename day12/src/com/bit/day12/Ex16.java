@@ -5,14 +5,27 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.Vector;
+import java.io.Serializable;
 
-public class Ex14 {
+class Lec16 implements Serializable {
+
+	private static final long serialVersionUID = 2L;
+	private int su = 1111;
+	transient int su2 = 2222;	// 직렬화 대상에서 제외 -> 디폴트 값으로 출력
+	
+	public void func() {
+		System.out.println("바꾼기능 실행");
+	}
+	
+	public int getSu() {
+		return su;
+	}
+} 
+
+public class Ex16 {
 
 	public static void main(String[] args) {
-		File file = new File("test06.bin");
-		
+		File file = new File("test07.bin");
 		FileOutputStream fos = null;
 		ObjectOutputStream oos = null;
 		
@@ -20,22 +33,7 @@ public class Ex14 {
 			fos = new FileOutputStream(file);
 			oos = new ObjectOutputStream(fos);
 			
-			oos.write(-127);
-			oos.writeInt(1234);
-			
-			//data스트림과 중복
-			ArrayList list = new ArrayList();
-			list.add(1111);
-			list.add(2222);
-			list.add(3333);
-			oos.writeObject(list);
-			
-			Vector vec = new Vector();
-			vec.add("잘들어감");
-			Vector vec2 = new Vector();
-			vec2.add(3.14);
-			vec.add(vec2);
-			oos.writeObject(vec);
+			oos.writeObject(new Lec16());
 			
 			oos.close();
 			fos.close();
@@ -44,7 +42,6 @@ public class Ex14 {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
 
 }

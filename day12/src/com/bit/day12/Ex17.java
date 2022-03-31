@@ -5,13 +5,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.util.ArrayList;
-import java.util.Vector;
 
-public class Ex15 {
+public class Ex17 {
 
 	public static void main(String[] args) {
-		File file = new File("test06.bin");
+		File file = new File("test07.bin");
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		
@@ -19,24 +17,13 @@ public class Ex15 {
 			fis = new FileInputStream(file);
 			ois = new ObjectInputStream(fis);
 			
-			int su = ois.read();
-			int su2 = ois.readInt();
-			ArrayList list = (ArrayList)ois.readObject();
-			Vector vec = (Vector)ois.readObject();
+			Lec16 obj = (Lec16)ois.readObject();
 			
 			ois.close();
 			fis.close();
 			
-			System.out.println(su);
-			System.out.println(su2);
-			for(int i=0; i<list.size(); i++) {
-				System.out.println(list.get(i));
-			}
-			System.out.println(vec.get(0));
-			Vector vec2 = (Vector)vec.get(1);
-			for(int i=0; i<vec2.size(); i++) {
-				System.out.println(vec2.get(i));
-			}
+			System.out.println(obj.su2);
+			obj.func();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
