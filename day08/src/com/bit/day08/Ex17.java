@@ -13,6 +13,7 @@ public class Ex17 {
 		// 배열을 사용하시오 (동적할당)
 		// 컬렉션 프레임워크 금지
 		
+		
 		System.out.println("학생성적 관리프로그램(ver 0.3.0)");
 		Scanner sc = new Scanner(System.in);
 		int countOfStudent = 1;
@@ -20,6 +21,8 @@ public class Ex17 {
 		String[] subject = new String[] {"국어","수학","영어"};
 		
 		while(true) {
+			System.out.println("메뉴를 선택해주세요");
+			System.out.print("1.학생추가 2.성적보기 3.정보수정 4.학생삭제 0.종료>");
 			System.out.print("1.입력 2.보기 3.수정 4.삭제 0.종료>");
 			String input = sc.next();						// 보기 입력 값  
 			

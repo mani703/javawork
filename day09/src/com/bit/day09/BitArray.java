@@ -1,7 +1,7 @@
 package com.bit.day09;
 
 public class BitArray implements BitQueue, BitStack{
-	private Object[] arr = new Object[10];
+	private Object[] arr = new Object[0];
 	
 	public void add(Object stu) {
 		Object[] before = arr;
