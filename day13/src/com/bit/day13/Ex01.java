@@ -10,7 +10,7 @@ class Lec01 extends java.lang.Thread {
 	}
 }
 
-public class Ex13 {
+public class Ex01 {
 
 	public static void main(String[] args) {
 		Lec01 thr2 = new Lec01();
