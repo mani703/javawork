@@ -16,7 +16,7 @@ public class Server {
 		BufferedWriter bw = null;
 		
 		try {
-			serve = new ServerSocket(5000);
+			serve = new ServerSocket(5002);
 			sock = serve.accept();
 			
 			is = sock.getInputStream();

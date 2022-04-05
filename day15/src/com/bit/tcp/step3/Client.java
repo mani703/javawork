@@ -17,7 +17,7 @@ public class Client {
 		BufferedWriter bw = null;
 		
 		try {
-			sock = new Socket("192.168.128.143", 5000);
+			sock = new Socket("192.168.128.143", 5001);
 			is = sock.getInputStream();
 			os = sock.getOutputStream();
 			isr = new InputStreamReader(is);
