@@ -15,7 +15,7 @@ import java.awt.TextField;
 public class Ex02 extends Frame {
 
 	public Ex02() {
-		Font font = new Font(Font.SANS_SERIF, Font.BOLD, 20);	// new Font("폰트명", 스타일, 크기);
+		Font font = new Font(Font.SANS_SERIF, Font.BOLD, 20);	//new Font("폰트명", 스타일, 크기);
 		
 		Panel p = new Panel();
 		Button btn = new Button("abcd");
