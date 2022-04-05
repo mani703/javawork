@@ -12,7 +12,7 @@ public class Ex01 {
 		// swing - 운영체제 종속성 없음 (자바가 직접 드로잉)
 		
 		// 배치관리자 - 컴포넌트 요소를 어떻게 화면에 위치와 크기를 알아서 결정
-//		new FlowLayout();	 // 1.
+//		new FlowLayout();	 // 1.	default layout - 중앙정렬, 컴포넌트 사이즈 내용에 따라 결정
 //		new GridLayout();	 // 2.
 //		new BorderLayout();	 // 3.	(동, 서, 남, 북)
 //		new CardLayout();	 // 4.	(화면전환 용으로 많이 쓰임)
