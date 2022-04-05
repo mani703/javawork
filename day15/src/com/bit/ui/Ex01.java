@@ -23,19 +23,23 @@ public class Ex01 {
 		f.setSize(400, 300);
 		f.setLocation(300, 300);
 		f.setVisible(true);
+		
 		Panel p = new Panel();
 //		p.setLayout(new FlowLayout());
 //		p.setLayout(new GridLayout(2, 1));	// new GridLayout(세로, 가로);
 //		p.setLayout(new BorderLayout());
 		p.setLayout(null);
+		
 		Button btn = new Button();
 		btn.setSize(100, 50);
 		btn.setLocation(100, 100);
 		btn.setLabel("first");
 		p.add(btn);
+		
 		Button btn2 = new Button();
 		btn2.setLabel("second");
 		p.add(btn2);
+		
 		f.add(p);
 	}
 
