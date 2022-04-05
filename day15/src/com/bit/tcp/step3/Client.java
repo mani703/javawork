@@ -1,4 +1,4 @@
-package com.bit.tcp.step2;
+package com.bit.tcp.step3;
 
 import java.net.*;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class Client {
 		BufferedWriter bw = null;
 		
 		try {
-			sock = new Socket("192.168.128.138", 5000);
+			sock = new Socket("192.168.128.143", 5000);
 			is = sock.getInputStream();
 			os = sock.getOutputStream();
 			isr = new InputStreamReader(is);

@@ -7,8 +7,8 @@ public class Client {
    public static void main(String[] args) {
       Socket sock=null;
       InetAddress inet= null;
-//      OutputStream os=null;
-//      PrintStream ps=null;
+//    OutputStream os=null;
+//    PrintStream ps=null;
       InputStream is=null;
       InputStreamReader isr=null;
       BufferedReader br=null;
@@ -21,12 +21,12 @@ public class Client {
          br=new BufferedReader(isr);
          System.out.println(br.readLine());
          
-//         os=sock.getOutputStream();
-//         ps=new PrintStream(os);
-//         ps.println("내가 왔다...");
+//       os=sock.getOutputStream();
+//       ps=new PrintStream(os);
+//       ps.println("내가 왔다...");
 //         
-//         ps.close();
-//         os.close();
+//       ps.close();
+//       os.close();
          br.close();
          isr.close();
          sock.close();
