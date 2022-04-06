@@ -63,7 +63,6 @@ public class Client2 extends Frame implements Runnable {
 				String input = sc.nextLine();
 
 				if (input.equals("1")) {
-					String seg = "message:";
 					Thread thr = new Thread(me);
 					thr.start();
 
@@ -71,7 +70,7 @@ public class Client2 extends Frame implements Runnable {
 						System.out.print("message:");
 						String msg = sc.nextLine();
 						if(msg.equals("exit")) break;
-						bw.write(seg + ":" + msg + ":" + name);
+						bw.write("message:" + msg + ":" + name);
 						bw.newLine();
 						bw.flush();
 					}
