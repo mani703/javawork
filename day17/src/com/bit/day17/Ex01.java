@@ -106,10 +106,7 @@ public class Ex01 {
 				input = sc.nextLine();
 				input = "\r\n" + input + "\t";
 				int startIdx = data.indexOf(input) + 2;
-				System.out.println(startIdx);
 				int endIdx = startIdx + data.substring(startIdx).indexOf("\r") + 2;
-				System.out.println(data.substring(startIdx));
-				System.out.println(data.substring(startIdx).indexOf("\r"));
 				data = data.replace(data.substring(startIdx, endIdx), "");
 				/////
 //				try {
